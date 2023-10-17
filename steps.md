@@ -75,4 +75,6 @@ Create logic which will contain all the code needed in order to display the reci
 run the app()
 ********************
 Create CSS styling
+********************
+create base.html
 

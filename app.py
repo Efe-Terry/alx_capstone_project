@@ -4,7 +4,7 @@ from urllib.parse import unquote
 
 app = Flask(__name__)
 
-API_KEY = '5867c59e52e84d009ee82eb1c5ce92e6'
+API_KEY = '8c5108999873490cb6e365e532ec4762'
 
 # ----------> ROUTES <---------- #
 
@@ -12,6 +12,10 @@ API_KEY = '5867c59e52e84d009ee82eb1c5ce92e6'
 @app.route('/home', methods=['GET'])
 def home():
     return render_template('index.html', recipes=[], search_query='')
+
+@app.route('/about', methods=['GET'])
+def about():
+    return render_template('about.html')
 
 # Main route for the app
 @app.route('/', methods=['GET', 'POST'])
